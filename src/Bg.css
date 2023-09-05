@@ -1,0 +1,36 @@
+.Bg {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 150px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px black;
+    background-color: grey;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.header_text {
+    color: white;
+    margin: 25px;
+}
+
+.header_btn {
+    margin: 25px;
+    background-image: url('assets/Upload.png');
+    background-repeat: no-repeat;
+    background-color: cornflowerblue;
+    background-position: 10px;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    width: 110px;
+    padding-left: 29px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
