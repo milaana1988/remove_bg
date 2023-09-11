@@ -5,7 +5,7 @@
     margin-top: 150px;
     border-radius: 8px;
     box-shadow: 1px 1px 10px black;
-    background-color: grey;
+    background-color: #222A34;
 }
 
 .header {
@@ -16,13 +16,14 @@
 .header_text {
     color: white;
     margin: 25px;
+    font-family: 'Aduma';
 }
 
 .header_btn {
     margin: 25px;
     background-image: url('assets/Upload.png');
     background-repeat: no-repeat;
-    background-color: cornflowerblue;
+    background-color: #475366;
     background-position: 10px;
     border: none;
     border-radius: 8px;
@@ -33,4 +34,5 @@
     align-items: center;
     display: flex;
     color: white;
+    font-family: 'Aduma';
 }
