@@ -1,6 +1,6 @@
 .Bg {
     width: 800px;
-    height: 500px;
+    height: 600px;
     margin: 0 auto;
     margin-top: 150px;
     border-radius: 8px;
@@ -10,18 +10,32 @@
 
 .header {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-around; 
 }
 
-.header_text {
+.header_text, .header_supported_formats {
     color: white;
     margin: 25px;
     font-family: 'Aduma';
 }
 
+.header_text {
+    font-size: 18px;
+}
+
+.header_supported_formats, .header_btn {
+    font-size: 12px;;
+}
+
+.header_supported_formats {
+    margin-left: 50px;
+    margin-top: 30px;
+    
+}
+
 .header_btn {
     margin: 25px;
-    background-image: url('assets/Upload.png');
+    background-image: url(assets/Upload.png);
     background-repeat: no-repeat;
     background-color: #475366;
     background-position: 10px;
@@ -35,4 +49,146 @@
     display: flex;
     color: white;
     font-family: 'Aduma';
+    flex-wrap: wrap;
+    margin-top: 26px;
+}
+
+.main_div {
+    display: flex;
+    justify-content:space-evenly;
+    height: 500px;
+}
+
+.right_div {
+    background-color:#303A4B;
+    flex: 30;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.left_div {
+    background-color:#303A4B;
+    flex: 70;
+    margin: 0 8px 0 8px;
+    border-radius: 8px;
+    padding: 0 5px 0 5px;
+}
+
+.left_div-original-tab, .left_div-no_bg_tab {
+    background-color: #161C21;
+    height: 85.5%;
+    padding: 0 5px 0 5px;
+    margin: 0px 0 35px 0;
+}
+
+.left_div-tabs {
+    display: flex;
+    color: white;
+    cursor: pointer;
+    justify-content: space-evenly;
+    margin-top: 9px;
+    font-size: 11px;
+    margin-right: 330px;
+}
+
+.left_div-tabs-original {
+    background-image: url(assets/Image.png);
+    background-repeat: no-repeat;
+    background-position: 14px 0;
+    padding-left: 15px;
+    border-bottom: 3px solid #C933F3;
+    height: 24px;
+    width: 80px;
+}
+
+.left_div-tabs-bg_remove {
+    background-image: url(assets/Cleanup\ Edges.png);
+    background-repeat: no-repeat;
+    padding-left: 27px;
+    background-position: 14px 0;
+    width: 80px;
+}
+
+.right_div_middle_div {
+    display: flex;
+    background-color:#303A4B;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 5px 0 5px;
+    height: 100%;
+}
+
+.middle_div_top_div {
+    margin-top: 35px;
+    text-align: left;
+    position: relative; /* Add this */
+    background-color: #161C21;
+    height: 100%;
+    color: white;
+    padding-top: 20px;
+}
+
+.middle_div_top_div::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 3.5%; /* Adjust this to control the border width (95% - 2.5% = 92.5%) */
+    width: 93%; /* Set the width to 95% */
+    border-bottom: 1px solid #606976; /* Adjust the border thickness */
+}
+
+.middle_div_bottom_div {
+    margin-bottom: 35px;
+    text-align: left;
+    
+}
+
+.middle_div_top_div, .middle_div_bottom_div {
+    width: 100%;
+    background-color: #161C21;
+    height: 100%;
+    color: white;
+    padding-top: 40px;
+}
+
+.middle_div_top_div-text_1, .middle_div_top_div-text_2,
+.middle_div_bottom_div-text_1, .middle_div_bottom_div-text_2  {
+    padding: 0 10px 0 10px;
+}
+
+.middle_div_top_div-text_1, .middle_div_bottom_div-text_1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    
+}
+
+.middle_div_top_div-text_2, .middle_div_bottom_div-text_2 {
+    font-size: 12px;
+}
+
+.middle_div_bottom_div-text_1 {
+    background-image: url(assets/new.png);
+    background-repeat: no-repeat;
+    background-position: 29px;
+    background-size: 65px;
+}
+
+.middle_div_top_div-button, .middle_div_bottom_div-button {
+    width: 90%;
+    border-radius: 25px;
+    height: 35px;
+    background-color: transparent;
+    color: #287BA5;
+    border: 1px solid #287BA5;
+    margin: 12px 0 0 10px;
+}
+
+.middle_div_top_div-checkbox, .middle_div_bottom_div-checkbox {
+    font-size: 9px;
+    padding-left: 16px;
+    background-image: url(assets/check.png);
+    background-repeat: no-repeat;
+    margin: 10px 0 0 10px;
 }
