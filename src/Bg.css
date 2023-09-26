@@ -1,6 +1,6 @@
 .Bg {
     width: 800px;
-    height: 600px;
+    height: 650px;
     margin: 0 auto;
     margin-top: 150px;
     border-radius: 8px;
@@ -96,7 +96,6 @@
     background-repeat: no-repeat;
     background-position: 14px 0;
     padding-left: 15px;
-    border-bottom: 3px solid #C933F3;
     height: 24px;
     width: 80px;
 }
@@ -104,9 +103,10 @@
 .left_div-tabs-bg_remove {
     background-image: url(assets/Cleanup\ Edges.png);
     background-repeat: no-repeat;
-    padding-left: 27px;
-    background-position: 14px 0;
-    width: 80px;
+    padding-left: 23px;
+    background-position: 12px 0;
+    width: 82px;
+    height: 24px;
 }
 
 .right_div_middle_div {
@@ -192,3 +192,10 @@
     background-repeat: no-repeat;
     margin: 10px 0 0 10px;
 }
+
+.footer {
+    margin: 10px 10px 0 13px;
+    display: flex;
+    justify-content: space-between;
+}
+

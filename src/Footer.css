@@ -1,0 +1,29 @@
+.left_div-footer {
+    display: flex;
+    margin-top: 418px;
+    justify-content: space-around;
+    color: white;
+    font-size: 12px;
+}
+
+.left_div-footer-button {
+    background-color: #475366;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    width: 112px;
+    height: 25px;
+    font-size: 12px;
+    background-image: url('assets/eula.png');
+    background-repeat: no-repeat;
+    background-position: 12px 6px;
+    padding-left: 24px;
+    margin-right: 58px;
+
+}
+
+.left_div-footer-text {
+    display: flex;
+    margin-top: 5px;
+    flex: 50;
+}

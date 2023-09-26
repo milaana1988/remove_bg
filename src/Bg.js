@@ -1,11 +1,16 @@
 import './Bg.css';
 import { useState } from 'react';
+import Footer from './Footer';
+import logo from './assets/logo.png';
+import banner from './assets/banner.png';
 
 function Bg() {
   const [displayNoBgTab, setDisplayNoBgTab] = useState(false);
 
-  const changeTab = () => {
-    if(displayNoBgTab) {
+  const changeTab = (e) => {
+    const className = e.target.className;
+
+    if(className === 'left_div-tabs-original') {
         setDisplayNoBgTab(false);
     } else {
         setDisplayNoBgTab(true)
@@ -13,7 +18,7 @@ function Bg() {
   }
   return (
     <div className="Bg">
-        <div className="header">
+        <div className='header'>
             <span className='header_text'>Please upload a photo for background removal</span>
             <span className='header_supported_formats'>Supported formats: png, jpeg</span>
             <span className='header_btn'>Upload photo</span>
@@ -22,13 +27,17 @@ function Bg() {
         <div className='main_div'>
             <div className='left_div'>
                 <div className='left_div-tabs'>
-                    <span className='left_div-tabs-original' onClick={changeTab}>Original</span>
-                    <span className='left_div-tabs-bg_remove' onClick={changeTab}>Remove BG</span>
+                    <span className='left_div-tabs-original' onClick={changeTab} style={{borderBottom: displayNoBgTab ? "" : "3px solid #C933F3"}}>Original</span>
+                    <span className='left_div-tabs-bg_remove' onClick={changeTab} style={{borderBottom: displayNoBgTab ? "3px solid #C933F3" : ""}}>Remove BG</span>
                 </div>
                 {!displayNoBgTab ?
-                    <div className='left_div-original-tab'>original</div>
+                    <div className='left_div-original-tab'>original
+                        <Footer/>
+                    </div>
                 :
-                    <div className='left_div-no_bg_tab'>bg removed</div>
+                    <div className='left_div-no_bg_tab'>bg removed
+                        <Footer/>
+                    </div>
                 }
             </div>
             <div className='right_div'>
@@ -47,6 +56,11 @@ function Bg() {
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div className='footer'>
+            <img className='logo_img' src={logo} alt='logo'/>
+            <img className='banner_img' src={banner} alt='banner'/>
         </div>
     </div>
   );
